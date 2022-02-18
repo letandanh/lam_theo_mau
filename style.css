@@ -1,0 +1,803 @@
+body{
+    font-family: 'Kaisei Tokumin', serif;
+}
+.nav-link{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    background-color: orange;
+}
+.navbar-brand img{
+    height: 70px;
+}
+header{
+    height: auto;
+    background-color: orange;
+}
+.search-form {
+    position: relative;
+    top:0px;
+    left:0px;
+    height: 50px;
+    border-radius: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+.search-input {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+    background: none;
+    color: #5a6674;
+    width: 195px;
+    height: 20px;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+.search-btn{
+    position: absolute;
+    right:0px;
+    height: 50px;
+    width:70px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(217, 255, 0);
+}
+.search-btn:hover{
+   background-color: rgb(0,0,0,0.5);
+}
+/* carouse-sp mau*/
+main{
+    height:400px;
+}
+.carousel {
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    font-family: Arial;
+}
+.carousel__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    perspective: 300px;
+}
+.carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100%;
+    box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    transition: all 0.3s ease-in;
+}
+.carousel__item:nth-child(1) {
+    background:url('hinhanh/1-1.png')
+}
+.carousel__item:nth-child(2) {
+    background:url('hinhanh/2-1.png')
+}
+.carousel__item:nth-child(3) {
+    background:url('hinhanh/3-1.png')
+}
+.carousel__item:nth-child(4) {
+    background:url('hinhanh/4-1.png')
+}
+.carousel__item:nth-child(5) {
+    background:url('hinhanh/5-1.png')
+}
+.carousel__item[data-pos="0"] {
+    z-index: 5;
+}
+.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+    opacity: 1;
+    filter: grayscale(10%);
+}
+.carousel__item[data-pos="-1"] {
+    transform: translateX(-40%) scale(0.9);
+    z-index: 4;
+}
+.carousel__item[data-pos="1"] {
+    transform: translateX(40%) scale(0.9);
+    z-index: 4;
+}
+.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
+    opacity: 1;
+    filter: grayscale(20%);
+}
+.carousel__item[data-pos="-2"] {
+    transform: translateX(-70%) scale(0.8);
+    z-index: 3;
+}
+.carousel__item[data-pos="2"] {
+    transform: translateX(70%) scale(0.8);
+    z-index: 3;
+}
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide a{
+    border:1px solid orange;
+    padding:50px;
+    border-radius: 40%;
+}
+.swiper-slide .fa{
+    width:30px;
+    height:30px;
+}
+
+/* san pham */
+.sanpham{
+    margin-top: 350px;
+    padding:0px 9.8px 19.6px;
+    background-color: none;
+}
+.sanpham .col-sm-4{
+    height:470px;
+    justify-content: center;
+    align-items: center;
+}
+.box-img{
+    overflow: hidden;
+    box-shadow:0 0 28px 0px #888888;
+    border:5px solid white;
+    position: relative;
+}
+.box-img h3{
+    width:100%;
+    height:100%;
+}
+.box-img h3 a{
+    font-size: 15.8px;
+    color:white;
+    text-decoration: none;
+    background-color: orange;
+    position: absolute;
+    top:37%;
+    left: 25%;
+    padding:5px 45px;
+    border-radius:40px;
+    line-height:25.6px;
+    opacity:0;
+    transition: all 0.3s ease;
+}
+.box-img h4 a{
+    font-size: 15.8px;
+    color:black;
+    text-decoration: none;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left: 25%;
+    padding:5px 45px;
+    border-radius:40px;
+    line-height:25.6px;
+    opacity:0;
+    transition: all 0.3s ease;
+}
+.sanpham img{
+    height:300px;
+}
+.box-img:hover img {
+    transform:scale(1.05);
+    transition: all linear 0.5s;
+}
+.box-img:hover .danhle{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    left: 0;
+    top:0;
+}
+.box-img:hover h4 a{
+    transform: translate3d(0,-40%,0);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.box-img:hover h3 a{
+    transform: translate3d(0,-40%,0);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+span{
+    position: absolute;
+    display:block;
+  }
+.span1{
+    position:absolute;
+    display:block;
+    background-color: white;
+    width:100%;
+    height:1px;
+    top:10%;
+    left: 25%;
+    transform:rotate(40deg);
+    opacity: 0;
+}
+.span2{
+    position:absolute;
+    display:block;
+    background-color: white;
+    width:100%;
+    height:1px;
+    top:90%;
+    left: -20%;
+    transform:rotate(40deg);
+    opacity: 0;
+}
+.box-img:hover .span1{
+    opacity: 1;
+}
+.box-img:hover .span2{
+    opacity: 1;
+}
+.box-text{
+    margin-top: 20px;
+    font-size:18.4px;
+    line-height:29.44px;
+    text-align: center;
+}
+.box-text a{
+    color:rgba(0, 0, 0, 0.719);
+    display:inline-block;
+    font-size: 21.16px;
+    font-weight: 700;
+    line-height: 27,508px;
+    margin:2,116px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.box-text a:hover{
+    text-decoration: none;
+}
+.box-text p{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    margin:1.5px 0 0 ;
+}
+/* taisao */
+.taisao{
+    width:100%;
+    height:auto;
+    position: relative;
+}
+.taisao .shape{
+    position:absolute;
+    bottom:-20%;
+    left:0;
+}
+.taisao .text1{
+    position:absolute;
+    left: 45%;
+    top:20%;
+    font-size: 44px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height:45px;
+}
+.taisao .text2{
+    position:absolute;
+    left: 40%;
+    top:31%;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:orange;
+    line-height:80px;
+}
+.taisao .text3{
+    position:absolute;
+    left: 40%;
+    top:47%;
+    font-size: 41px;
+    text-transform: uppercase;
+    color:#b2b2b1;
+    line-height:45px;
+}
+.lydo{
+    position: absolute;
+    width:82px;
+    height: 82px;
+}
+.number1{
+    top:45%;
+    left:72%;
+    background-image: url('hinhanh/a.png');
+    background-repeat: none;
+}
+.number1 .nb1{
+    position:absolute;
+    top:18%;
+    left:28%;
+    color:white;
+    font-size: 33.256px;
+    font-weight: 600;
+}
+.number2{
+    top:63%;
+    left:62%;
+    background-image: url('hinhanh/b.png');
+    background-repeat: none;
+}
+.number2 .nb2{
+    position:absolute;
+    top:18%;
+    left:28%;
+    color:white;
+    font-size: 33.256px;
+    font-weight: 600;
+}
+.number3{
+    top:83%;
+    left:52%;
+    background-image: url('hinhanh/c.png');
+    background-repeat: none;
+}
+.number3 .nb3{
+    position:absolute;
+    top:18%;
+    left:28%;
+    color:white;
+    font-size: 33.256px;
+    font-weight: 600;
+}
+.number4{
+    top:100%;
+    left:43%;
+    background-image: url('hinhanh/d.png');
+    background-repeat: none;
+}
+.number4 .nb4{
+    position:absolute;
+    top:18%;
+    left:28%;
+    color:white;
+    font-size: 33.256px;
+    font-weight: 600;
+}
+.number1 .text-lydo1{
+    width:300px;
+    position:absolute;
+    top:18%;
+    left:120%;
+}
+.number2 .text-lydo2{
+    width:300px;
+    position:absolute;
+    top:18%;
+    left:120%;
+}
+.number3 .text-lydo3{
+    width:300px;
+    position:absolute;
+    top:18%;
+    left:120%;
+}
+.number4 .text-lydo4{
+    width:300px;
+    position:absolute;
+    top:18%;
+    left:120%;
+}
+/* sodome */
+.sodome{
+    width:100%;
+    height: auto;
+    background: linear-gradient(to bottom,rgb(255, 153, 0), orange);
+    margin-top: 170px;
+    text-align: center;
+    padding:70px;
+}
+/* reason */
+.reason{
+    padding:50px 0;
+    width:100%;
+    height:auto;
+    background: url('hinhanh/BG-quy-trinh_1.jpg');
+    text-align: center;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.reason h3{
+    text-transform: uppercase;
+    font-size: 41.4px;
+    color:white;
+    line-height:48px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.reason h4{
+    text-transform: capitalize;
+    font-size: 24.26px;
+    color:white;
+    line-height:48px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.icon img{
+    width:105px;
+    height:105px;
+    border:3px solid white;
+    padding:21.56px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.icon img:hover{
+    animation: icon 1s infinite ease-in-out;
+}
+
+@keyframes icon {
+    0% {
+      transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+      transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+      transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+      transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+      transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+      transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+      transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+.reason p{
+    text-transform: capitalize;
+    color:white;
+    line-height:28px;
+}
+/* khách hàng */
+.khachhang{
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-color: #d6d6d3;
+    padding:40px 0;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.khachhang h4{
+    margin:39.245px 0;
+    font-weight: 800;
+    line-height:14px;
+    font-size: 35.2px;
+}
+.khachhang .trai{
+    position:absolute;
+    left:0;
+    margin:49.245px 0;
+    width:40%;
+    height:2px;
+}
+.khachhang .phai{
+    position:absolute;
+    right:0;
+    top:0;
+    margin:49.245px 0;
+    width:40%;
+    height:2px;
+}
+#owl-demo {
+    margin-top:27px;
+}
+#owl-demo .item img{
+    margin:auto;
+    display: block;
+    width: 211px;
+    height:106px;
+    background-color: white;
+    border-radius: 5px;
+}
+/* hotline */
+.hotline{
+    width:100%;
+    height: auto;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.hotline .hotro{
+    background-color: orange;
+    padding:2% 0% 5% 7%;
+}
+.hotline .khuyenmai{
+    background-color: #b8b8b4;
+    padding:2% 7% 5% 2%;
+}
+.hotline h2{
+    font-weight: 800;
+    line-height:40px;
+    text-transform: uppercase;
+}
+.hotline h4,h5{
+    color:white;
+    line-height:35px;
+}
+/* giaodien */
+.giaodien{
+    background-color: black;
+    padding:25px 0;
+}
+.title-giaodien h4{
+    color:white;
+    line-height:72px;
+    text-transform: uppercase;
+}
+.giaodien .mau{
+    text-align: center;
+}
+.giaodien .mau a{
+    color:white;
+    text-decoration: none;
+    line-height:31.257px;
+}
+.giaodien .mau a:hover{
+    color:orange;
+    text-decoration: none;
+    font-size: 19px;
+}
+.giaodien .congty h3{
+    color:orange;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.giaodien .congty h4{
+    color:white;
+    line-height: 60px;
+}
+.giaodien .congty a:hover{
+    color:orange;
+    text-decoration: none;
+    font-size: 19px;
+}
+.giaodien .congty .fa{
+    line-height: 35px;
+    color:white;
+}
+/* lien he */
+.giaodien .lienhe .fb,.yb,.ig,.tw{
+    color:orange;
+    opacity: 0;
+    font-size:16px;
+}
+.giaodien .lienhe .col:hover span{
+    opacity: 1;
+}
+.giaodien .congty .fab{
+    font-size: 40px;
+}
+.giaodien .congty a{
+    color:white;
+    text-decoration: none;
+    line-height: 35px;
+}
+/* section */
+.section form{
+    border:1px solid orange;
+    padding:0 15px 30px 15px;
+    background-color: white;
+}
+.section{
+    width:280px;
+    position:relative;
+    position: fixed;
+    z-index: 100;
+    top: 10%;
+    left: -280px;
+    transition: all 0.5s ease;
+}
+.section-an{
+    width:280px;
+    position:relative;
+    position: fixed;
+    z-index: 100;
+    top: 10%;
+    left: 0;
+    transition: all 0.5s ease;
+}
+.section .title-tuvan{
+    text-transform: uppercase;
+    font-size:19.23px;
+    color:orange;
+    line-height:75.123px;
+    font-weight: 600;
+}
+.tuvan{
+    position:absolute;
+    top:25%;
+    left:100%;
+    background-image: linear-gradient(to top, orange, #ffcc00);
+    border-radius:7.5px;
+    color:white;
+    font-size:17.568px;
+    padding:35px 2.325px;
+    cursor:pointer;
+}
+/* tao hotline rung lac */
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+  }
+  .hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+  }
+  .hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid orange;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+  }
+  .hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230, 197, 8, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    transform-origin: 50% 50%;
+  }
+  .hotline-phone-ring-img-circle {
+    background-color: rgba(230, 197, 8, 0.7);
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hotline-phone-ring-img-circle .pps-btn-img img {
+      width: 20px;
+      height: 20px;
+  }
+  .hotline-bar {
+    position: absolute;
+    background: rgba(230, 197, 8, 0.7);
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+    left: 33px;
+    bottom: 37px;
+  }
+  .hotline-bar > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 50px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+  }
+  .hotline-bar > a:hover,
+  .hotline-bar > a:active {
+    color: #fff;
+  }
+  @keyframes phonering-alo-circle-anim {
+    0% {
+      transform: rotate(0) scale(0.5) skew(1deg);
+      opacity: 0.1;
+    }
+    30% {
+      transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(0) scale(1) skew(1deg);
+      opacity: 0.1;
+    }
+  }
+  @keyframes phonering-alo-circle-fill-anim {
+    0% {
+      transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+    50% {
+      transform: rotate(0) scale(1) skew(1deg);
+      opacity: 0.6
+    }
+    100% {
+      transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+  }
+  @keyframes phonering-alo-circle-img-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+  }

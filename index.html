@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="css/scss.scss">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script scr='js/javascript.js'></script>
+    <link href="css/owl.carousel.css" rel="stylesheet">
+
+    <body>
+        <!-- hotline rung lac -->
+        <div class="hotline-phone-ring-wrap">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:0987654321" class="pps-btn-img">
+                        <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                    </a>
+                </div>
+            </div>
+            <div class="hotline-bar">
+                <a href="tel:0987654321">
+                    <span class="text-hotline">0987.654.321</span>
+                </a>
+            </div>
+        </div>
+        <!-- tuvan -->
+        <div class='section'>
+            <div class="row">
+                <div class="col">
+                    <div><i class="fas fa-times text-danger" style='float:right; margin: 10px;cursor:pointer;'></i></div>
+                    <form class='form-tuvan'>
+                        <lable class='title-tuvan'>đăng ký nhận tư vấn</lable>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="hoten" placeholder="Họ tên">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="sdt" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning mb-2 text-white">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+                <div class='tuvan' style='writing-mode: vertical-rl;'>Đăng ký nhận tư vấn</div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span onclick="openNav()">&#9776;</span>
+                </button>
+                <a class="navbar-brand" href="#"><img src='./hinhanh/logo-website-png.png' /></a>
+                <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            KHO GIAO DIỆN
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KHO ỨNG DỤNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BẢNG GIÁ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TÍNH NĂNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link te" href="#"><img src='./hinhanh/vi.png' class='position-relative' /></a>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                        <h1 class='text-center p-3 text-white d-none d-md-block'>Cheap Web Design: Design - Development - Hosting</h1>
+                        <h6 class='text-center p-3 text-white d-md-none'>Design - Development - Hosting</h6>
+                        <h1 class='text-center p-3 text-white d-none d-md-block'>[Fast - Affordable - Professional] - [1000 + Best Templates]</h1>
+                        <h6 class='text-center p-3 text-white d-md-none'>[Fast - Affordable - Professional]</h6>
+                    </div>
+                    <form class="search-form w-75">
+                        <input type="search" placeholder="Find your template..." class="search-input w-75">
+                        <button class="button search-btn"><i class="fas fa-search text-dark"></i></button>
+                    </form>
+                    <h5 class='text-center p-5 pb-5 d-none d-md-block'>Sales & E-commerce – Restaurant & Hotel - Wedding - Real Estate – Entertainment – Travel</h5>
+                    <h6 class='text-center p-5 d-md-none'>Sales & E-commerce – Restaurant & Hotel - Wedding - Real Estate – Entertainment – Travel</h6>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main container">
+                <div class="row">
+                    <div class="carousel">
+                        <div class="carousel__list">
+                            <div class="carousel__item" data-pos="-2"></div>
+                            <div class="carousel__item" data-pos="-1"></div>
+                            <div class="carousel__item" data-pos="0"></div>
+                            <div class="carousel__item" data-pos="1"></div>
+                            <div class="carousel__item" data-pos="2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="swiper mySwiper mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><i class="fa fa-building"></i></a></div>
+                            <div class="swiper-slide"><a href="#"><i class="fa fa-camera"></i></a></div>
+                            <div class="swiper-slide"><a href="#"><i class="fa fa-mountain"></i></a></div>
+                            <div class="swiper-slide"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+                            <div class="swiper-slide"><a href="#"><i class="fa fa-utensils"></i></a></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <sanpham>
+            <div class="container">
+                <div class="row sanpham ">
+                    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="box-img">
+                            <img src='./hinhanh/desktop_21036-368x400.jpg' class='w-100'>
+                            <div class="danhle">
+                                <h3><a href="#">Xem đề mô</a></h3>
+                                <h4><a href="#">Xem chi tiết</a></h4>
+                                <span class='span1'></span>
+                                <span class='span2'></span>
+                            </div>
+                        </div>
+                        <div class="box-text">
+                            <h5><a href="#">VNW_21035</a></h5>
+                            <p>Nhà hàng khách sạn</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="box-img">
+                            <img src='./hinhanh/desktop_21303-368x400.jpg' class='w-100'>
+                            <div class="danhle">
+                                <h3><a href="#">Xem đề mô</a></h3>
+                                <h4><a href="#">Xem chi tiết</a></h4>
+                                <span class='span1'></span>
+                                <span class='span2'></span>
+                            </div>
+                        </div>
+                        <div class="box-text">
+                            <h5><a href="#">VNW_21035</a></h5>
+                            <p>Nhà hàng khách sạn</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1700">
+                        <div class="box-img">
+                            <img src='./hinhanh/desktop_21747-368x400.jpg' class='w-100'>
+                            <div class="danhle">
+                                <h3><a href="#">Xem đề mô</a></h3>
+                                <h4><a href="#">Xem chi tiết</a></h4>
+                                <span class='span1'></span>
+                                <span class='span2'></span>
+                            </div>
+                        </div>
+                        <div class="box-text">
+                            <h5><a href="#">VNW_21035</a></h5>
+                            <p>Nhà hàng khách sạn</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="box-img">
+                            <img src='./hinhanh/desktop_21988-368x400.jpg' class='w-100'>
+                            <div class="danhle">
+                                <h3><a href="#">Xem đề mô</a></h3>
+                                <h4><a href="#">Xem chi tiết</a></h4>
+                                <span class='span1'></span>
+                                <span class='span2'></span>
+                            </div>
+                        </div>
+                        <div class="box-text">
+                            <h5><a href="#">VNW_21035</a></h5>
+                            <p>Nhà hàng khách sạn</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="box-img">
+                            <img src='./hinhanh/desktop_21035-368x400.jpg' class='w-100'>
+                            <div class="danhle">
+                                <h3><a href="#">Xem đề mô</a></h3>
+                                <h4><a href="#">Xem chi tiết</a></h4>
+                                <span class='span1'></span>
+                                <span class='span2'></span>
+                            </div>
+                        </div>
+                        <div class="box-text">
+                            <h5><a href="#">VNW_21035</a></h5>
+                            <p>Nhà hàng khách sạn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sanpham>
+        <taisao class='d-none d-lg-block'>
+            <div class="container">
+                <div class="row taisao">
+                    <div>
+                        <img src='./hinhanh/logo.png' class='w-40' data-aos="fade-down">
+                        <img src='./hinhanh/shape.png' class='w-75 shape' data-aos="fade-up">
+                        <span class='text1' data-aos="fade-down">tại sao bạn</span>
+                        <span class='text2' data-aos="fade-down">cần có</span>
+                        <span class='text3' data-aos="fade-down">w e b s i t e</span>
+                    </div>
+                    <div class="lydo number1" data-aos="fade-right">
+                        <div class="nb1">01</div>
+                        <div class="text-lydo1">Tạo dựng hình ảnh chuyên nghiệp</br> cho cá nhân, tổ chức, doanh nghiệp.</div>
+                    </div>
+                    <div class="lydo number2" data-aos="fade-right">
+                        <div class="nb2">02</div>
+                        <div class="text-lydo2">Mang đến cơ hội quảng bá và bán hàng
+                            </br>không giới hạn, về không gian và thời gian</div>
+                    </div>
+                    <div class="lydo number3" data-aos="fade-left">
+                        <div class="nb3">03</div>
+                        <div class="text-lydo3">Thông tin được cập nhật nhanh chóng,</br>hiệu quả cao, tiết kiệm chi phí.</div>
+                    </div>
+                    <div class="lydo number4" data-aos="fade-left">
+                        <div class="nb4">04</div>
+                        <div class="text-lydo4">Đồng hành và vượt lên trên</br>các đối thủ cạnh tranh.</div>
+                    </div>
+                </div>
+            </div>
+        </taisao>
+        <sodome>
+            <div class="container-fluid sodome">
+                <div>
+                    <img src='./hinhanh/website-template-demo.png' class='w-100' data-aos="fade-up" data-aos-duration="1000" />
+                </div>
+            </div>
+        </sodome>
+        <reason>
+            <div class="reason">
+                <div class="container">
+                    <h3 data-aos="fade-up" data-aos-duration="1500">LÝ DO CHỌN VINAWEBSITE</h3>
+                    <h4 data-aos="fade-up" data-aos-duration="1700">Khởi Động Thành Công Của Bạn Ngay Hôm Nay</h4>
+                    <div class="row">
+                        <div class="col-md-6 text-center ">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/1-2-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1100">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/8-1-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/2-2-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1300">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/4-2-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1400">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/7-1-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/6-1-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1600">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/5-2-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="1700">
+                                    <div class="icon">
+                                        <img src="https://vinawebsite.vn/wp-content/uploads/2018/08/3-2-442x400.png" />
+                                    </div>
+                                    <div class="icon-box-text">
+                                        <p>Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </reason>
+        <khachhang>
+            <div class="khachhang text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <b class='trai'></b>
+                            <h4>khách hàng</h4><b class='phai'></b>
+                        </div>
+                    </div>
+                    <div class="owl-carousel" id="owl-demo">
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh1.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh2.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh3.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh4.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh5.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh6.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logokh7.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </khachhang>
+        <hotline>
+            <div class="hotline">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 hotro">
+                            <div class="box-hotro" data-aos="fade-right" data-aos-duration="1000">
+                                <h2>hotline hỗ trợ</h2>
+                                <h3>1900 6046</h3>
+                                <h4>nơi khách hàng được tôn vinh</h4>
+                                <h5>letandanh890@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 khuyenmai">
+                            <div class="box-khuyenmai" data-aos="fade-right" data-aos-duration="1000">
+                                <h2>Đăng kí nhận khuyến mãi</h2>
+                                <h6>Những thông tin về sản phẩm mới, sự kiện và khuyến mãi</h6>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn vào đây">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="custom-select">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                        <button type="submit" class="btn btn-warning text-white">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </hotline>
+        <giaodien>
+            <div class="giaodien">
+                <div class="container">
+                    <div class="title-giaodien">
+                        <h4>kho giao diện website</h4>
+                    </div>
+                    <div class="row mau">
+                        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1000">
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                        </div>
+                        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1300">
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                        </div>
+                        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1400">
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                        </div>
+                        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                        </div>
+                    </div>
+                    <hr style='height:1px; width: 100%; background-color: white;'>
+                    <div class="row congty">
+                        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+                            <h3>CÔNG TY VINAHOST</h3>
+                            <div><i class="fa fa-home"> TP.HỒ CHÍ MINH: C/c Cửu Long, 351/31 Nơ Trang Long, P.13, Bình Thạnh, TP.Hồ Chí Minh
+                            HÀ NỘI: 56 Vương Thừa Vũ,P. Khương Trung, Q. Thanh Xuân, TP. Hà Nội</i></div>
+                            <div><i class="fa fa-phone-square"> 1900 6046 – (028) 7300 6046</i></div>
+                            <div><i class="fa fa-envelope"> sale@vinawebsite.vn</i></div>
+                        </div>
+                        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1200">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                            <div><a href="#">Mẫu website doanh nghiệp</a></div>
+                        </div>
+                        <div class="col-sm-3 lienhe" data-aos="fade-right" data-aos-duration="1400">
+                            <h4>Liên hệ</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div><a href="#"><i class="fab fa-facebook text-primary"></i></a></div>
+                                    <span class='fb'>Follow Facebook</span>
+                                </div>
+                                <div class="col">
+                                    <div><a href="#"><i class="fab fa-youtube text-danger"></i></a></div>
+                                    <span class='yb'>Follow Youtube</span>
+                                </div>
+                                <div class="col">
+                                    <div><a href="#"><i class="fab fa-instagram text-warning "></i></a></div>
+                                    <span class='ig'>Follow Instagram</span>
+                                </div>
+                                <div class="col">
+                                    <div><a href="#"><i class="fab fa-twitter text-info"></i></a></div>
+                                    <span class='tw'>Follow Twitter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </giaodien>
+    </body>
+    <script src='js/javascript.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- tu van -->
+    <script>
+        $(document).ready(function() {
+            $(".tuvan").click(function() {
+                $(".section").toggleClass("section-an");
+            });
+        });
+        $(document).ready(function() {
+            $(".fa-times").click(function() {
+                $(".section").toggleClass("section-an");
+            });
+        });
+    </script>
+    <!-- khach hang -->
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                autoPlay: 3000,
+                items: 5,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3]
+            });
+
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    slidesPerGroup: 1,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            } else {
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    slidesPerGroup: 1,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+
+</html>
